@@ -1,0 +1,14 @@
+ 
+     PREFIX       VERB   URI PATTERN        CONTROLLER/ACTION
+
+    products_path GET    /products          products#index
+
+     product_path GET    /products/:id      products#show
+     product_path DELETE /products/:id      products#destroy
+
+ new_product_path GET    /products/new      products#new
+    products_path POST   /products          products#create
+
+edit_product_path GET    /products/:id/edit products#edit
+     product_path PATCH  /products/:id      products#update
+     product_path PUT    /products/:id      products#update

@@ -1,3 +1,6 @@
 <%= link_to "Back to all products", products_path %> | <%= link_to "Edit", edit_product_path(@product) %> | <%= link_to "Delete", product_path(@product), method: :delete  %>
 
 <p><%= @product.name %>, <%= @product.description %> <%= @product.formatted_price %></p>
+
+<%= render '/reviews/form' %>
+
