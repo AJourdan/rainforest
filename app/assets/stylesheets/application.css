@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+.topbar {
+	top: 0;
+	background-image:url(http://i.imgur.com/ABJLwbr.jpg);
+	height: 150px;
+}
+
+body {
+	margin: 0px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 10px 0px;
+}
+
+.title {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+hr {
+	width: 70%;
+}
+
+
+
+.userinfo {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

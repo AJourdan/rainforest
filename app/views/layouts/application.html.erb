@@ -5,8 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="topbar"></div>
+  <div class="title">
+    <h3>Rainforest</h3>
+    <hr>
+  </div>
+
     <% if flash[:notice] %>
       <p id="notice"><%= flash[:notice] %></p>
     <% end %>
@@ -23,6 +31,5 @@
         <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
       <% end %>
     </p>
-
 </body>
 </html>
