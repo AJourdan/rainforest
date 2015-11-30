@@ -50,4 +50,7 @@ hr {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
 }
