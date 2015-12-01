@@ -1,10 +1,7 @@
 <ul>
-  <% @products.each do |product| %>
-    <li><%= link_to "#{product.name}", "/products/#{product.id}" %> - <%= product.description %> // <%= product.formatted_price %></li>
-  <% end %>
+    <li>
+    	<%= link_to "#{product.name}", product_path(product) %> - <%= product.description %> // $<%= product.formatted_price %>
+    </li>
+	<br>
 
-<br>
-	<div class="newp">
-  <%= link_to "Create a new product", new_product_path %>
-  	</div>
 </ul>
